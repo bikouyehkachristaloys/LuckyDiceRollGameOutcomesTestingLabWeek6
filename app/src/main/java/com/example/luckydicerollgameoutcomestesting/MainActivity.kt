@@ -1,11 +1,14 @@
 package com.example.luckydicerollgameoutcomestesting
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+fun main() {
+    val myFirstDice = Dice(6)
+    val rollResult = myFirstDice.roll()
+    val luckyNumber = 4
+}
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class Dice (val numSides: Int) {
+
+    fun roll(): Int {
+        return (1..numSides).random()
     }
 }
