@@ -6,7 +6,7 @@ fun main() {
     val luckyNumber = 4
 
     when (rollResult) {
-
+        luckyNumber -> println("You win!")
     }
 }
 
